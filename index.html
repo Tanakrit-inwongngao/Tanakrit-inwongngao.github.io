@@ -1,29 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+        nav a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+        section {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .project {
+            border: 1px solid #ccc;
+            padding: 1em;
+            margin-bottom: 1em;
+            background-color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Your Title</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    </main>
-
-  <footer>
-    <p>&copy; 2023 Your Name</p>
-  </footer>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my personal portfolio</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer passionate about building user-friendly and visually appealing websites.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A brief description of this project goes here.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>A brief description of this project goes here.</p>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>A brief description of this project goes here.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    </section>
+    <footer>
+        &copy; 2024 My Portfolio
+    </footer>
 </body>
+
 </html>
