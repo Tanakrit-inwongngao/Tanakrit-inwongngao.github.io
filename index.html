@@ -4,88 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tanakrit Inwongngao</title>
+    <title>Profile - TANAKRIT INWONGNGAO</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
-        header {
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
             background-color: #333;
             color: #fff;
-            padding: 1em 0;
-            text-align: center;
+            padding: 20px;
+            width: 30%;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #555;
+        .left-column img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
-        nav a {
-            color: white;
-            padding: 1em;
+        .right-column {
+            padding: 20px;
+            width: 70%;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        .section-title {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #007bff;
             text-decoration: none;
         }
-        nav a:hover {
-            background-color: #333;
-        }
-        section {
-            padding: 2em;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            background-color: #333;
-            color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .project {
-            border: 1px solid #ccc;
-            padding: 1em;
-            margin-bottom: 1em;
-            background-color: #fff;
-        }
-        .about-img {
-            width: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 1em auto;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Hi, my name is Tanakrit Inwongngao</h1>
-        <p>CS 66 / UP</p>
-    </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section class="section" id="about">
-        <h2>ABOUT ME</h2>
-        <img src="1.jpg" alt="Tanakrit Inwongngao" class="about-img">
-        <p>Currently studying at the University of Phayao.</p>
-        <p>Contact us at pooh08954@gmail.com.</p>
-    </section>
-    <section class="section" id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <a href="https://www.facebook.com/profile.php?id=100007456933302" target="_blank">Facebook</a><br>
-            <a href="https://www.instagram.com/pooh27_tanakrit/" target="_blank">Instagram</a>
-        </div>
-    </section>
+    <div class="container">
+        <div class="left-column">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h3>Personal Information</h3>
+            <p><strong>Date of Birth:</strong> 27 December 2004</p>
+            <p><strong>Facebook:</strong> <a href="#" target="_blank">Tanakrit Inwongngao</a></p>
+            <p><strong>Instagram:</strong> <a href="#" target="_blank">pooh27_tanakrit</a></p>
+            <p><strong>Phone:</strong> 0882595562</p>
+            <p><strong>Email:</strong> <a href="mailto:pooh08954@gmail.com">jiratpanunta@gmail.com</a></p>
+            <h3>Skills</h3>
+            <ul>
+                <li><strong>Technical Skills & Software:</strong> Python, Java, HTML</li>
+                <li><strong>Tools & Services:</strong> Visual Studio</li>
+            </ul>
 
-    <footer>
-       <p>Tanakrit Inwongngao</p>
-    </footer>
+        </div>
+
+        <div class="right-column">
+            <h1>TANAKRIT INWONGNGAO</h1>
+            <h2>Programmer</h2>
+
+           
+            <h3 class="section-title">Education</h3>
+            <p>Piyamitwittaya School<br>
+            Thoengwittayakhom School<br>
+            University of Phayao </p>
+
+           
+
+        </div>
+    </div>
 </body>
 
 </html>
